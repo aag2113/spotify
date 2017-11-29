@@ -3,7 +3,7 @@ import spotipy.util as sputil
 
 import settings
 
-token = sputil.prompt_for_user_token(settings.USER, settings.SCOPE, client_id=settings.CLIENT_ID, client_secret=settings.CLIENT_SECRET, redirect_uri='http://localhost/callback')
+token = sputil.prompt_for_user_token(settings.USER, settings.SCOPE, client_id=settings.CLIENT_ID, client_secret=settings.CLIENT_SECRET, redirect_uri=settings.REDIRECT_URI)
 
 sp = spotipy.Spotify(auth=token)
 
